@@ -16,15 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  const okButton = document.getElementById('submitExamBoard');
-okButton.addEventListener('click', function() {
-  const examBoardSelect = document.getElementById('examBoardSelect');
-  const selectedOption = examBoardSelect.options[examBoardSelect.selectedIndex];
-  const url = selectedOption.dataset.url;
+  const submitButtons = document.querySelectorAll('.submitExamBoard');
+  submitButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      const examBoardSelect = button.previousElementSibling;
+      const selectedOption = examBoardSelect.options[examBoardSelect.selectedIndex];
+      const url = selectedOption.dataset.url;
 
-  if (url) {
-    window.location.href = url;
-  }
-});
-
+      if (url) {
+        window.location.href = url;
+      }
+    });
+  });
 });
