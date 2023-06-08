@@ -137,10 +137,27 @@ html {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+  user-select: none;
 }
 
 .close:hover,
 .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.OK {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.OK:hover,
+.OK:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
