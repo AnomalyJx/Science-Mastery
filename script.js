@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', function() {
       const modalId = button.getAttribute('data-modal');
       const modal = document.getElementById(modalId);
-      modal.style.display = 'block';
+      if (modal) {
+        modal.style.display = 'block';
+      }
     });
   });
 
@@ -13,7 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
   closeModalButtons.forEach(function(button) {
     button.addEventListener('click', function() {
       const modal = button.closest('.modal');
-      modal.style.display = 'none';
+      if (modal) {
+        modal.style.display = 'none';
+      }
     });
   });
 });

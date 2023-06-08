@@ -89,6 +89,46 @@ html {
   padding: 20px;
   border: 1px solid #888;
   width: 300px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px; /* Added border-radius */
+}
+
+.modal h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.modal select {
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.modal button {
+  font-family: 'Lemon Milk', Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+.modal button:active {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .close {

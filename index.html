@@ -20,8 +20,8 @@
       &lt;GCSE Mastery&gt;
     </h1>
     <div class="menu">
-      <button class="menu-option">Biology</button>
-      <button class="menu-option">Chemistry</button>
+      <button class="menu-option" data-modal="biology-modal">Biology</button>
+      <button class="menu-option" data-modal="chemistry-modal">Chemistry</button>
       <button class="menu-option">Physics</button>
       <button class="menu-option">Maths</button>
       <button class="menu-option">Comp Sci</button>
@@ -31,9 +31,30 @@
     <!-- Biology Modal -->
     <div id="biology-modal" class="modal">
       <div class="modal-content">
-        <!-- Modal content for Biology option -->
-        <h2>Biology Modal</h2>
-        <!-- Add your specific content for Biology option here -->
+        <h2>Biology</h2>
+        <p>Please select your exam board:</p>
+        <select id="biology-exam-board">
+          <option value="AQA">AQA</option>
+          <option value="Edexcel">Edexcel</option>
+          <option value="OCR">OCR</option>
+          <option value="WJEC">WJEC</option>
+        </select>
+        <button class="close">Close</button>
+      </div>
+    </div>
+
+    <!-- Chemistry Modal -->
+    <div id="chemistry-modal" class="modal">
+      <div class="modal-content">
+        <h2>Chemistry</h2>
+        <p>Please select your exam board:</p>
+        <select id="chemistry-exam-board">
+          <option value="AQA">AQA</option>
+          <option value="Edexcel">Edexcel</option>
+          <option value="OCR">OCR</option>
+          <option value="WJEC">WJEC</option>
+        </select>
+        <button class="close">Close</button>
       </div>
     </div>
 
