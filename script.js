@@ -16,59 +16,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  const okButton = document.getElementById('submitExamBoardBiology');
-  okButton.addEventListener('click', function() {
-    const examBoardSelect = document.getElementById('examBoardSelectBiology');
-    const selectedOption = examBoardSelect.options[examBoardSelect.selectedIndex];
-    const url = selectedOption.dataset.url;
+  const okButton = document.getElementById('submitExamBoard');
+okButton.addEventListener('click', function() {
+  const examBoardSelect = document.getElementById('examBoardSelect');
+  const selectedOption = examBoardSelect.options[examBoardSelect.selectedIndex];
+  const url = selectedOption.dataset.url;
 
-    if (url) {
-      window.location.href = url;
-    }
-  });
-
-  const okButton = document.getElementById('submitExamBoardChemistry');
-  okButton.addEventListener('click', function() {
-    const examBoardSelect = document.getElementById('examBoardSelectChemistry');
-    const selectedOption = examBoardSelect.options[examBoardSelect.selectedIndex];
-    const url = selectedOption.dataset.url;
-
-    if (url) {
-      window.location.href = url;
-    }
-  });
-
-  const okButton = document.getElementById('submitExamBoardPhysics');
-  okButton.addEventListener('click', function() {
-    const examBoardSelect = document.getElementById('examBoardSelectPhysics');
-    const selectedOption = examBoardSelect.options[examBoardSelect.selectedIndex];
-    const url = selectedOption.dataset.url;
-
-    if (url) {
-      window.location.href = url;
-    }
-  });
-
-  const okButton = document.getElementById('submitExamBoardMaths');
-  okButton.addEventListener('click', function() {
-    const examBoardSelect = document.getElementById('examBoardSelectMaths');
-    const selectedOption = examBoardSelect.options[examBoardSelect.selectedIndex];
-    const url = selectedOption.dataset.url;
-
-    if (url) {
-      window.location.href = url;
-    }
-  });
-
-  const okButton = document.getElementById('submitExamBoardCompSci');
-  okButton.addEventListener('click', function() {
-    const examBoardSelect = document.getElementById('examBoardSelectCompSci');
-    const selectedOption = examBoardSelect.options[examBoardSelect.selectedIndex];
-    const url = selectedOption.dataset.url;
-
-    if (url) {
-      window.location.href = url;
-    }
-  });
+  if (url) {
+    window.location.href = url;
+  }
+});
 
 });
