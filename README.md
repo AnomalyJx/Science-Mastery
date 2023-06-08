@@ -31,6 +31,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or feedback regarding GCSE Mastery, please contact me at [taiwo027.210@gmail.com](mailto:your-email@example.com).
+For any inquiries or feedback regarding GCSE Mastery, please contact me at [taiwo027.210@gmail.com](mailto:taiwo027.210@gmail.com).
 
 
