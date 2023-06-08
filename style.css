@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Dacherry';
-  src: url('Dacherry.otf') format('truetype');
+  font-family: 'Ramyoon';
+  src: url('Ramyoon.otf') format('truetype');
 }
 
 @font-face {
@@ -34,22 +34,15 @@ html {
 .title {
   position: relative;
   user-select: none;
+  font-family: 'Ramyoon', Arial, sans-serif;
+  color: white;
   font-weight: 700;
   font-size: 72px;
+  transform: scale(2);
   padding: 30px;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  color: white;
 }
 
-/* Add the light mode styles */
-body.light-mode {
-  background-color: white;
-}
-
-.title.light-mode {
-  color: black;
-}
 
 .menu {
   margin-top: 20px;
@@ -76,56 +69,4 @@ body.light-mode {
 
 .menu-option:active {
   background-color: rgba(255, 255, 255, 0.7);
-}
-
-.menu-option.light-mode {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-}
-
-.mode-toggle.light-mode {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-}
-
-/* Add the styles for the mode toggle button */
-.mode-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  border-radius: 50%;
-  transition: background-color 0.3s, transform 0.3s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-size: 24px;
-}
-
-.mode-toggle:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  transform: scale(1.05);
-}
-
-.mode-toggle:active {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-/* Style for the light bulb icon */
-.mode-toggle i {
-  color: black;
-}
-
-/* Additional styles to align the light bulb icon */
-.mode-toggle i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
 }
