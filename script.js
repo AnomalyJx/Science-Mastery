@@ -16,16 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  const okButton = document.getElementById('OK');
+  const okButton = document.getElementById('submitExamBoard');
   okButton.addEventListener('click', function() {
-    // Perform desired action here
-    // For example, retrieve the selected exam board value and process it
     const examBoardSelect = document.getElementById('examBoardSelect');
-    const selectedExamBoard = examBoardSelect.value;
-    console.log('Selected exam board:', selectedExamBoard);
+    const selectedOption = examBoardSelect.options[examBoardSelect.selectedIndex];
+    const url = selectedOption.dataset.url;
 
-    // Close the modal after performing the action
-    const modal = okButton.closest('.modal');
-    modal.style.display = 'none';
+    if (url) {
+      window.location.href = url;
+    }
   });
 });
