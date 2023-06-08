@@ -6,7 +6,7 @@
 @font-face {
   font-family: 'Lemon Milk';
   src: url('LEMONMILK-Bold.otf') format('truetype');
-} 
+}
 
 * {
   margin: 0;
@@ -31,21 +31,15 @@ html {
   align-items: center;
 }
 
-/* Change the title back to normal */
 .title {
   position: relative;
   user-select: none;
-  color: #fff;
   font-weight: 700;
   font-size: 72px;
   padding: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
-}
-
-.title:before,
-.title:after {
-  content: none;
+  color: white;
 }
 
 /* Add the light mode styles */
@@ -82,16 +76,6 @@ body.light-mode {
 
 .menu-option:active {
   background-color: rgba(255, 255, 255, 0.7);
-}
-
-
-/* Add the light mode styles */
-body.light-mode {
-  background-color: white;
-}
-
-.title.light-mode {
-  color: black;
 }
 
 .menu-option.light-mode {
