@@ -1,24 +1,19 @@
-// Toggle light mode function
-function toggleLightMode() {
-  const body = document.body;
-  const title = document.querySelector('.title');
-  const menuOptions = document.querySelectorAll('.menu-option');
-  const modeToggle = document.getElementById('mode-toggle');
-
-  // Toggle light mode class on body
-  body.classList.toggle('light-mode');
-
-  // Toggle light mode class on title
-  title.classList.toggle('light-mode');
-
-  // Toggle light mode class on menu options
-  menuOptions.forEach(option => {
-    option.classList.toggle('light-mode');
+// JavaScript code to show/hide modals
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.menu-option');
+  buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      const modalId = button.getAttribute('data-modal');
+      const modal = document.getElementById(modalId);
+      modal.style.display = 'block';
+    });
   });
 
-  // Toggle light mode class on mode toggle button
-  modeToggle.classList.toggle('light-mode');
-}
-
-// Add event listener to mode toggle button
-document.getElementById('mode-toggle').addEventListener('click', toggleLightMode);
+  const closeModalButtons = document.querySelectorAll('.close');
+  closeModalButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      const modal = button.closest('.modal');
+      modal.style.display = 'none';
+    });
+  });
+});
