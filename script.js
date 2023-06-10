@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+
   const buttons = document.querySelectorAll('.menu-option');
   buttons.forEach(function(button) {
     button.addEventListener('click', function() {
@@ -29,3 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
