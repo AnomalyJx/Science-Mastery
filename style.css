@@ -213,21 +213,3 @@ html {
   transform: scale(1.05)
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.header-title {
-  font-family: 'Ramyoon', Arial, sans-serif;
-  font-size: 24px;
-  margin-right: 20px;
-}
-
-.header-line {
-  width: 100%;
-  border: none;
-  border-top: 1px solid #ccc;
-}

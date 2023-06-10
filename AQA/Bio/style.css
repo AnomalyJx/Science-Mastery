@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Ramyoon';
+  src: url('https://gcse.anomalyjx.repl.co/Ramyoon.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lemon Milk';
+  src: url('https://gcse.anomalyjx.repl.co/LEMONMILK-Bold.otf') format('truetype');
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-title {
+  font-family: 'Ramyoon', Arial, sans-serif;
+  font-size: 48px;
+  color: lime;
+  margin-right: 20px;
+  user-select: none;
+}
+
+.header-line {
+  width: 200%;
+  border: none;
+  border-top: 1px solid #00ff00;
+}
+
+h2 {
+  font-family: 'Ramyoon', Arial, sans-serif;
+  font-size: 32px;
+  color: white;
+}
+
+h3 {
+  font-family: 'Lemon Milk', Arial, sans-serif;
+  color: white;
+}
+
+p {
+  color: white;
+}
