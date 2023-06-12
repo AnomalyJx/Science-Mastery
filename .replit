@@ -192,5 +192,5 @@ build = ["sh", "-c", "npm run build"]
 run = ["sh", "-c", "npm run preview"]
 
 [auth]
-pageEnabled = true
-buttonEnabled = false
+pageEnabled = false
+buttonEnabled = true
