@@ -203,6 +203,7 @@ html {
   text-decoration: none;
 }
 
+
 .top-buttons a.github-button {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -211,6 +212,12 @@ html {
 .top-buttons a.google-form-button {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+.top-buttons h1{
+  color:white;
+  font-family: 'Lemon Milk', Arial, sans-serif;
+  font-size: 24px;
+  
 }
 
 .top-buttons a:hover {
@@ -248,3 +255,4 @@ html {
   outline: none;
   background-color: rgba(255, 255, 255, 0.5);
 }
+

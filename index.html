@@ -8,8 +8,6 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/fcee09bb36.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script src="https://replit.com/public/js/repl-auth-v2.js"></script>
-  <script src="server.js"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png">
@@ -19,13 +17,15 @@
 <body>
   <div class="content">
     <div class="top-buttons">
-      <button class="menu-option" data-modal="account-modal">account</button>
       <a href="https://forms.gle/RdAdsZiXCcSUuWb67" class="google-form-button" target="_blank">
         <i class="fa-solid fa-question fa-beat-fade" style="color: #000000;"></i>
       </a>
       <a href="https://github.com/AnomalyJx/GCSE-Mastery" class="github-button" target="_blank">
         <i class="fa-brands fa-github" style="color: #000000;"></i>
       </a>
+      <button class="menu-option" data-modal="settings-modal">
+        <i class="fa-solid fa-gear"></i>
+      </button>
 
     </div>
     <h1 class="title" data-text="GCSE MASTERY">
@@ -40,14 +40,17 @@
       <button class="menu-option" data-modal="geo-modal">Geography</button>
     </div>
 
-    <!-- Account Modal -->
-    <div id="account-modal" class="modal">
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal">
       <div class="modal-content">
-        <button class="close">&times;</button>
-        <h2>Account</h2>
-        <button onclick="LoginWithReplit()"> Create </button>
+        <h2>Settings</h2>
+        <p>Enter your username:</p>
+        <input type="text" id="username-input">
+        <button class="submitUsername" onclick="saveUsername()">Save</button>
+        <button class="close" onclick="closeSettingsModal()">Close</button>
       </div>
     </div>
+
 
     <!-- Biology Modal -->
     <div id="biology-modal" class="modal">
@@ -138,7 +141,6 @@
         <button class="close">Close</button>
       </div>
     </div>
-
   </div>
 
 </body>
