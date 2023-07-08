@@ -30,6 +30,34 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  const submitUsernameButton = document.querySelector('.submitUsername');
+  submitUsernameButton.addEventListener('click', function() {
+    const usernameInput = document.getElementById('username-input');
+    const username = usernameInput.value;
+
+    if (username.trim() !== '') {
+      // Send the username to the server
+      fetch('/saveUsername', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username: username })
+      })
+        .then(response => response.json())
+        .then(data => {
+          // Handle the response from the server
+          if (data.success) {
+            alert('Username saved successfully.');
+          } else {
+            alert('Failed to save username.');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+  });
 
 
 });
