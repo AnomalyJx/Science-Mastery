@@ -1,6 +1,6 @@
-# GCSE Mastery
+# A-Level Mastery
 
-GCSE Mastery is a GCSE revision website designed to help students excel in their biology, chemistry, and physics exams. This website provides valuable resources and study materials to support students in their exam preparation.
+A-Level Mastery is a A-Level revision website designed to help students excel in their biology, chemistry, and physics exams. This website provides valuable resources and study materials to support students in their exam preparation.
 
 ## Features
 
@@ -31,6 +31,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or feedback regarding GCSE Mastery, please contact me at [taiwo027.210@gmail.com](mailto:taiwo027.210@gmail.com).
+For any inquiries or feedback regarding A-Level Mastery, please contact me at [taiwo027.210@gmail.com](mailto:taiwo027.210@gmail.com).
 
 
