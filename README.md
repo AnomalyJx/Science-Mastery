@@ -31,6 +31,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or feedback regarding Science Mastery, please contact me at [o.taiwo2@outlook.com](mailto:o.taiwp2@outlook.com).
+For any inquiries or feedback regarding Science Mastery, please contact me at [o.taiwo2@outlook.com](mailto:o.taiwo2@outlook.com).
 
 
