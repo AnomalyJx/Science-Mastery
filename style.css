@@ -284,3 +284,12 @@ html {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+
+.background-music {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  user-select: none; 
+  transform: translateX(-50%);
+  height: 150px; /* Adjust the height as needed */
+}
